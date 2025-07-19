@@ -163,7 +163,7 @@ async def checksub_callback(client, callback_query):
     else:
         # Resend subscription prompt
         links = await create_invite_links(client)
-        btn = [[InlineKeyboardButton("🤖 Join Updates Channel", url=url)] for url in links.values()]
+        btn = [[InlineKeyboardButton("⚓️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗝𝗼𝗶𝗻", url=url)] for url in links.values()]
         btn.append([InlineKeyboardButton("🔄 Try Again", callback_data=data)])
         await callback_query.edit_message_text(
             text="**❌ You still haven't joined all channels!**\n\nPlease join and press Try Again:",
@@ -207,7 +207,7 @@ async def start(client, message):
             
     if not await is_subscribed(message.from_user.id, client):
         links = await create_invite_links(client)
-        btn = [[InlineKeyboardButton("🤖 Join Updates Channel", url=url)] for url in links.values()]
+        btn = [[InlineKeyboardButton("⚓️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗝𝗼𝗶𝗻", url=url)] for url in links.values()]
 
         if len(message.command) == 2:
             try:
@@ -219,7 +219,13 @@ async def start(client, message):
         
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**♦️ READ THIS INSTRUCTION ♦️
+
+🗣 നിങ്ങൾ ചോദിക്കുന്ന സിനിമകൾ നിങ്ങൾക്ക് ലഭിക്കണം എന്നുണ്ടെങ്കിൽ നിങ്ങൾ ഞങ്ങളുടെ ചാനലിലേക്ക് റിക്വസ്റ്റ് ചെയ്തിരിക്കണം. റിക്വസ്റ്റ് ചെയ്യാൻ  ⚓️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗝𝗼𝗶𝗻 ⚓️ എന്ന ബട്ടണിൽ അമർത്തിയാൽ നിങ്ങൾക്ക് ഞാൻ ആ സിനിമ അയച്ചു തരുന്നതാണ്..😍
+
+🗣 In Order To Get The Movie Requested By You in Our Group, You Must Have To join Our Official Channel First By Clicking ⚓️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗝𝗼𝗶𝗻 ⚓️ Button or the Link shown Below. I'll Send You That Movie 🙈
+
+👇CLICK ⚓️ 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝘁𝗼 𝗝𝗼𝗶𝗻 ⚓️👇!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
         )
