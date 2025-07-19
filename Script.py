@@ -6,10 +6,10 @@ class script(object):
 Currently using free server so please Dont kill Me...
 """
     ABOUT_TXT = """<b>
-◎ Cʀᴇᴀᴛᴏʀ: <a href=https://github.com/mntg4u> MN - TG</a>
-◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
-◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
-◎ Bᴏᴛ Sᴇʀᴠᴇʀ: KoYeb</b>"""
+○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : Dr Appu kuttan LLB MBS
+○ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : 𝖯𝗒𝗍𝗁𝗈𝗇 𝟥
+○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Shammi Hero Aada Hero
+○ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : 𝖬𝗈𝗇𝗀𝗈𝖣𝖡 𝖥𝗋𝖾𝖾 𝖳𝗂𝖾𝗋</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Shobana Filter Bot  is a open source project. 
 - Source - <ahref=https://github.com/mn-bots/ShobanaFilterBot>Click Here to get source code</a>
