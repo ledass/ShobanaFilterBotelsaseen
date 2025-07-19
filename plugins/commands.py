@@ -192,13 +192,10 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [
-                InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url=f'https://t.me/+5iw_dWArjYg2YTBl')
-               ],[
-                InlineKeyboardButton('⚓️ Oᴛᴛ Iɴsᴛᴀɢʀᴀᴍ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://www.instagram.com/new_ott__updates?igsh=enI5ZzIzcXuzd3Bl')
-              ],[
-                InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url="https://t.me/+5iw_dWArjYg2YTBl"),
-        ]       
+        buttons = [[
+                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data'),
+                    InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            ]]      
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video="https://envs.sh/FE1.mp4",
@@ -228,13 +225,10 @@ async def start(client, message):
         )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [
-                InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url=f'https://t.me/+5iw_dWArjYg2YTBl')
-               ],[
-                InlineKeyboardButton('⚓️ Oᴛᴛ Iɴsᴛᴀɢʀᴀᴍ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://www.instagram.com/new_ott__updates?igsh=enI5ZzIzcXuzd3Bl')
-              ],[
-                InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url="https://t.me/+5iw_dWArjYg2YTBl"),
-        ]       
+        buttons = [[
+                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data'),
+                    InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            ]]      
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video="https://envs.sh/FE1.mp4",
