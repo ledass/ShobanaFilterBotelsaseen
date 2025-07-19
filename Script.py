@@ -111,7 +111,8 @@ Total Members = <code>{}</code>
 Added By - {}
 """
     RESULT_TXT="""<blockquote> Hey,     </blockquote>
-<blockquote>Jᴜsᴛ Sᴇᴇ Wʜᴀᴛ I Found Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ </blockquote>"""
+<blockquote>Jᴜsᴛ Sᴇᴇ Wʜᴀᴛ I Found Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ
+🔻 Tap on below corresponding file number to download. 🔻</blockquote>"""
 
     CUSTOM_FILE_CAPTION = """📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
 FɪʟᴇSɪᴢᴇ : {file_size}
