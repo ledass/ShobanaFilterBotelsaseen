@@ -440,13 +440,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.TAM_SPELL, show_alert="true")
         
     elif query.data == "start":
-        buttons = [
-               InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url=f'https://t.me/+5iw_dWArjYg2YTBl')
-               ],[
-                InlineKeyboardButton('⚓️ Oᴛᴛ Iɴsᴛᴀɢʀᴀᴍ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://www.instagram.com/new_ott__updates?igsh=enI5ZzIzcXuzd3Bl')
-              ],[
-                InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url="https://t.me/+5iw_dWArjYg2YTBl"),
-        ]       
+        buttons = [[
+                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data'),
+                    InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+            ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
