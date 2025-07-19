@@ -473,7 +473,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/mn-bots/ShobanaFilterBot')
+            InlineKeyboardButton('Saadhanam Kaiyyil undo', url='https://t.me/+QbWh1eEL0v4wM2Zl')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
